@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/lib/site-config";
@@ -18,13 +17,13 @@ import {
 } from "lucide-react";
 
 const SERVICES = [
-  { title: "Dishwasher Repair", desc: "Drain, spray-arm, and control faults fixed fast.", icon: <Sparkles className="size-5" />, img: "/kitchen.jpg" },
-  { title: "Dryer Repair", desc: "No-heat, noisy drum, or belt issues resolved.", icon: <Wind className="size-5" />, img: "/kitchen.jpg" },
-  { title: "Washing Machine Repair", desc: "Leaks, no-spin, and vibration problems diagnosed.", icon: <WashingMachine className="size-5" />, img: "/kitchen.jpg" },
-  { title: "Stove / Cooker / Hotplate", desc: "Ignition, heating element, and thermostat repairs.", icon: <Flame className="size-5" />, img: "/kitchen.jpg" },
-  { title: "Fridge Repair", desc: "Cooling loss, compressor, and thermostat service.", icon: <Refrigerator className="size-5" />, img: "/kitchen.jpg" },
-  { title: "Oven Repair", desc: "Uneven heating, sensor, and control panel fixes.", icon: <Microwave className="size-5" />, img: "/kitchen.jpg" },
-  { title: "TV Repair", desc: "No display, sound issues, and power faults handled.", icon: <Tv className="size-5" />, img: "/kitchen.jpg" },
+  { title: "Dishwasher Repair", desc: "Drain, spray-arm, and control faults fixed fast.", icon: <Sparkles className="size-5" /> },
+  { title: "Dryer Repair", desc: "No-heat, noisy drum, or belt issues resolved.", icon: <Wind className="size-5" /> },
+  { title: "Washing Machine Repair", desc: "Leaks, no-spin, and vibration problems diagnosed.", icon: <WashingMachine className="size-5" /> },
+  { title: "Stove / Cooker / Hotplate", desc: "Ignition, heating element, and thermostat repairs.", icon: <Flame className="size-5" /> },
+  { title: "Fridge Repair", desc: "Cooling loss, compressor, and thermostat service.", icon: <Refrigerator className="size-5" /> },
+  { title: "Oven Repair", desc: "Uneven heating, sensor, and control panel fixes.", icon: <Microwave className="size-5" /> },
+  { title: "TV Repair", desc: "No display, sound issues, and power faults handled.", icon: <Tv className="size-5" /> },
 ];
 
 export default function ServicesSection() {
@@ -65,27 +64,14 @@ export default function ServicesSection() {
                 key={s.title}
                 variants={item}
                 whileHover={{ y: -3 }}
-                className="rounded-2xl border bg-background/70 backdrop-blur shadow-sm overflow-hidden"
+                className="rounded-2xl border bg-background/70 backdrop-blur p-5 shadow-sm"
               >
-                <div className="relative w-full aspect-[16/9]">
-                  <Image
-                    src={s.img}
-                    alt={`${s.title} in Dubai and Abu Dhabi`}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    priority={false}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/30 to-transparent" />
+                <div className="inline-flex items-center gap-2 text-primary">
+                  <span className="rounded-full border border-primary/30 bg-primary/10 p-2">{s.icon}</span>
+                  <span className="text-xs font-medium">Trusted Repair</span>
                 </div>
-                <div className="p-5">
-                  <div className="inline-flex items-center gap-2 text-primary">
-                    <span className="rounded-full border border-primary/30 bg-primary/10 p-2">{s.icon}</span>
-                    <span className="text-xs font-medium">Trusted Repair</span>
-                  </div>
-                  <h3 className="mt-3 font-semibold tracking-tight">{s.title}</h3>
-                  <p className="text-sm text-muted-foreground mt-1">{s.desc}</p>
-                </div>
+                <h3 className="mt-3 font-semibold tracking-tight">{s.title}</h3>
+                <p className="text-sm text-muted-foreground mt-1">{s.desc}</p>
               </motion.div>
             ))}
           </motion.div>
