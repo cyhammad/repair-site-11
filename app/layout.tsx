@@ -3,6 +3,7 @@ import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import FixedCallButtons from "@/components/FixedCallButtons";
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
@@ -10,8 +11,8 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Home Appliance Repair",
-  description: "Home Appliance Repair",
+  title: "UAE Appliances Service",
+  description: "UAE Appliances Service",
 };
 
 export default function RootLayout({
@@ -27,6 +28,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <FixedCallButtons />
       </body>
     </html>
   );

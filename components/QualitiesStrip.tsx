@@ -40,7 +40,7 @@ const QualitiesStrip = () => {
   } as const;
   return (
     <motion.section
-      className="flex flex-col gap-10 relative items-center bg-[url('/kitchen.jpg')] bg-cover bg-center bg-no-repeat bg-fixed w-full py-10"
+      className="flex flex-col gap-10 relative items-center bg-[url('/repair.png')] bg-cover bg-center bg-no-repeat bg-fixed w-full py-10"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: false, amount: 0.3 }}

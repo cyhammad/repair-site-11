@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function AboutUs() {
   return (
-    <section id="about" className="py-16">
+    <section id="about" className="py-16 max-w-screen overflow-x-hidden">
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
@@ -33,8 +33,8 @@ export default function AboutUs() {
           <div className="absolute -inset-6 -z-10 bg-[radial-gradient(120px_80px_at_20%_10%,theme(colors.primary/25),transparent_60%),radial-gradient(140px_90px_at_85%_20%,theme(colors.accent/25),transparent_60%)]" />
           <div className="absolute inset-0 -z-10 rounded-3xl blur-2xl opacity-40 bg-gradient-to-br from-primary/30 via-accent/30 to-transparent" />
           <Image
-            src="/kitchen.jpg"
-            alt="Certified home appliance repair experts at work"
+            src="/about.png"
+            alt="Certified UAE Appliances Service experts at work"
             width={900}
             height={900}
             className="w-full h-auto border aspect-square object-cover shadow-xl"

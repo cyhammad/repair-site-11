@@ -1,4 +1,4 @@
 export const siteConfig = {
-  name: "Home Appliance Repair",
-  phone: "+1 (234) 567-890",
+  name: "UAE Appliances Service",
+  phone: "+971 50 123 4567",
 };
