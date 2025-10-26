@@ -51,7 +51,7 @@ const Footer = () => {
               <Wrench className="size-5" /> {siteConfig.name}
             </div>
             <p className="text-sm text-background/80 max-w-prose">
-              Reliable, fast, and professional UAE Appliances Service. We keep your
+              Reliable, fast, and professional Samsung Appliances Repairing. We keep your
               home running with expert care and honest service.
             </p>
             <div className="flex flex-wrap items-center gap-4 pt-2">

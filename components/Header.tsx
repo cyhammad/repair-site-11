@@ -13,6 +13,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Menu, Phone, MessageCircle, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Header = () => {
   return (
@@ -69,12 +70,10 @@ const Header = () => {
           <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
             <Link
               href="/"
-              className="font-semibold text-lg flex items-center gap-2"
+              className="font-semibold text-lg flex items-center flex-col justify-center gap-1"
             >
-              <motion.span initial={{ rotate: -15, scale: 0.9 }} animate={{ rotate: 0, scale: 1 }} transition={{ type: "spring", stiffness: 260, damping: 18, delay: 0.12 }}>
-                <Sparkles className="size-5" />
-              </motion.span>
-              {siteConfig.name}
+              <Image src="/samsung.svg" alt={siteConfig.name} width={100} height={100} />
+              <span className="text-sm text-white bg-black px-2">Appliances Repairing</span>
             </Link>
             <motion.ul
               className="hidden md:flex items-center gap-6"

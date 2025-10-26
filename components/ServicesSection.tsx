@@ -107,7 +107,7 @@ export default function ServicesSection() {
             variants={item}
             className="text-3xl md:text-4xl font-extrabold tracking-tight"
           >
-            Expert UAE Appliances Service Services
+            Expert Samsung Appliances Repairing Services
           </motion.h2>
           <motion.p variants={item} className="text-muted-foreground max-w-3xl">
             Reliable dishwasher, dryer, washing machine, stove/cooker/hotplate,

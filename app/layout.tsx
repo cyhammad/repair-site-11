@@ -11,8 +11,8 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "UAE Appliances Service",
-  description: "UAE Appliances Service",
+  title: "Samsung Appliances Repairing",
+  description: "Samsung Appliances Repairing",
 };
 
 export default function RootLayout({

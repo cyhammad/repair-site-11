@@ -34,7 +34,7 @@ export default function AboutUs() {
           <div className="absolute inset-0 -z-10 rounded-3xl blur-2xl opacity-40 bg-gradient-to-br from-primary/30 via-accent/30 to-transparent" />
           <Image
             src="/about.png"
-            alt="Certified UAE Appliances Service experts at work"
+            alt="Certified Samsung Appliances Repairing experts at work"
             width={900}
             height={900}
             className="w-full h-auto border aspect-square object-cover shadow-xl"
