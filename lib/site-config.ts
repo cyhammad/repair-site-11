@@ -1,4 +1,4 @@
 export const siteConfig = {
   name: "Samsung Appliances Repairing",
-  phone: "+971 581917540",
+  phone: "+971 567306195",
 };
